@@ -1,0 +1,6 @@
+#!/bin/bash
+SM_DIR=~/rosmc_turtlesim_statemachines
+ROS_IP=127.0.0.1 
+ROS_MASTER_URI=http://localhost:11311/ 
+ROS_NAMESPACE=turtle2
+rafcon -c $SM_DIR/config.yaml -o $SM_DIR/modules/mission_control/mission_executor/mission_executor

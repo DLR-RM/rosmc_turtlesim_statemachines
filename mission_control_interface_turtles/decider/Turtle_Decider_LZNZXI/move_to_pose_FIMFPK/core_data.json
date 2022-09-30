@@ -1,0 +1,39 @@
+{
+    "__jsonqualname__": "rafcon.core.states.library_state.LibraryState",
+    "input_data_port_runtime_values": {
+        "0": 45.0,
+        "1": "TAKES NO EFFECT",
+        "2": 3.0,
+        "3": 5.0
+    },
+    "library_name": "move_to_pose",
+    "library_path": "mission_control_interface_turtles/turtle_test_skills",
+    "name": "move to pose",
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome",
+            "name": "preempted",
+            "outcome_id": -2
+        },
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome",
+            "name": "aborted",
+            "outcome_id": -1
+        },
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome",
+            "name": "success",
+            "outcome_id": 0
+        }
+    },
+    "output_data_port_runtime_values": {},
+    "state_id": "FIMFPK",
+    "use_runtime_value_input_data_ports": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true
+    },
+    "use_runtime_value_output_data_ports": {},
+    "version": "0.1"
+}

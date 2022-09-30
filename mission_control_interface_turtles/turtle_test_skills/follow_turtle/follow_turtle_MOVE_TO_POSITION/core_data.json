@@ -1,0 +1,84 @@
+{
+    "__jsonqualname__": "rafcon.core.states.hierarchy_state.HierarchyState", 
+    "data_flows": {
+        "6": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 6, 
+            "from_key": 22, 
+            "from_state": "MOVE_TO_POSITION", 
+            "to_key": 22, 
+            "to_state": "OEOIWT"
+        }, 
+        "7": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 7, 
+            "from_key": 20, 
+            "from_state": "MOVE_TO_POSITION", 
+            "to_key": 20, 
+            "to_state": "OEOIWT"
+        }
+    }, 
+    "description": null, 
+    "income": {
+        "__jsonqualname__": "rafcon.core.state_elements.logical_port.Income"
+    }, 
+    "input_data_ports": {
+        "20": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 20, 
+            "data_type": {
+                "__type__": "__builtin__.str"
+            }, 
+            "default_value": "TAKES NO EFFECT", 
+            "name": "turtle_name"
+        }, 
+        "22": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 22, 
+            "data_type": {
+                "__type__": "__builtin__.str"
+            }, 
+            "default_value": "turtle1", 
+            "name": "turtle_to_follow"
+        }
+    }, 
+    "name": "follow_turtle", 
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "preempted", 
+            "outcome_id": -2
+        }, 
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "aborted", 
+            "outcome_id": -1
+        }, 
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "success", 
+            "outcome_id": 0
+        }
+    }, 
+    "output_data_ports": {}, 
+    "scoped_variables": {}, 
+    "state_id": "MOVE_TO_POSITION", 
+    "transitions": {
+        "3": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": null, 
+            "from_state": null, 
+            "to_outcome": null, 
+            "to_state": "OEOIWT", 
+            "transition_id": 3
+        }, 
+        "4": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "OEOIWT", 
+            "to_outcome": 0, 
+            "to_state": "MOVE_TO_POSITION", 
+            "transition_id": 4
+        }
+    }
+}

@@ -1,0 +1,18 @@
+EXECUTION_LOG_ENABLE: false
+EXECUTION_LOG_PATH: '%RAFCON_TEMP_PATH_BASE/execution_logs'
+EXECUTION_LOG_SET_READ_AND_WRITABLE_FOR_ALL: false
+LIBRARY_PATHS:
+    VIRTUAL_LINK_TO_ACTIONS: mission_control_interface_turtles
+    modules: modules
+    mission_control_interface_turtles: mission_control_interface_turtles
+    generic: ${RAFCON_LIB_PATH}/generic
+    turtle_sim_actions: turtle_sim_actions
+    turtle_sim_utils: turtle_sim_utils
+LIBRARY_RECOVERY_MODE: false
+LOAD_SM_WITH_CHECKS: false
+MAX_LENGTH_FOR_STATE_NAME_IN_STORAGE_PATH: None
+NO_PROGRAMMATIC_CHANGE_OF_LIBRARY_STATES_PERFORMED: false
+SCRIPT_COMPILE_ON_FILESYSTEM_LOAD: false
+SCRIPT_RECOMPILATION_ON_STATE_EXECUTION: true
+STORAGE_PATH_WITH_STATE_NAME: true
+TYPE: SM_CONFIG
